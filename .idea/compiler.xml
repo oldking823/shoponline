@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mall-file-service" />
+        <module name="mall-goods-api" />
+        <module name="mall-canal-service" />
+        <module name="mall-service-dependency" />
+        <module name="mall-search-service" />
+        <module name="mall-search-api" />
+        <module name="mall-goods-service" />
+        <module name="mall-common" />
+        <module name="mall-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mall-api" options="" />
+      <module name="mall-canal-service" options="-parameters" />
+      <module name="mall-common" options="-parameters" />
+      <module name="mall-file-service" options="-parameters" />
+      <module name="mall-gateway" options="-parameters" />
+      <module name="mall-goods-api" options="-parameters" />
+      <module name="mall-goods-service" options="-parameters" />
+      <module name="mall-search-api" options="-parameters" />
+      <module name="mall-search-service" options="-parameters" />
+      <module name="mall-service" options="" />
+      <module name="mall-service-dependency" options="-parameters" />
+      <module name="mall-util" options="" />
+      <module name="mall-web" options="" />
+      <module name="vip-mall" options="" />
+    </option>
+  </component>
+</project>
