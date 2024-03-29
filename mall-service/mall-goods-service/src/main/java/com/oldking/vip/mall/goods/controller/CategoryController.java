@@ -19,4 +19,12 @@ public class CategoryController {
     public RespResult<List<Category>> findByParentId(@PathVariable("id")Integer pid){
         return RespResult.ok(categoryService.finByParentId(pid));
     }
+    /**
+     * 根据分类查询分类信息
+     */
+    @GetMapping("/{id}")
+    public RespResult<Category> one(@PathVariable(value = "id")Integer id){
+        Category category = categoryService.getById(id);
+        return RespResult.ok(category);
+    }
 }

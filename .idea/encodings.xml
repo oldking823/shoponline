@@ -4,6 +4,7 @@
     <file url="file://D:/mavencode/mycode/org/springframework/boot/spring-boot-starter-parent/3.2.0/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-api/mall-page-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-search-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/src/main/resources" charset="UTF-8" />
@@ -18,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/mall-util/mall-service-dependency/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-util/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-util/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-web/mall-page-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-web/mall-search-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -87,4 +88,25 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper,Spu> implements SpuSer
             skuMapper.insert(sku);
         }
     }
+    /****
+     * 根据spuid查询Product
+     * @param id
+     * @return
+     */
+    @Override
+    public Product findBySupId(String id) {
+        //查询Spu
+        Spu spu = spuMapper.selectById(id);
+        //查询Sku集合
+        QueryWrapper<Sku> queryWrapper = new QueryWrapper<Sku>();
+        queryWrapper.eq("spu_id",id);
+        List<Sku> skus = skuMapper.selectList(queryWrapper);
+
+        //Product
+        Product product = new Product();
+        product.setSpu(spu);
+        product.setSkus(skus);
+        return product;
+    }
+
 }

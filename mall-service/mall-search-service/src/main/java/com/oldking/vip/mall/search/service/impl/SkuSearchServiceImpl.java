@@ -1,17 +1,21 @@
 package com.oldking.vip.mall.search.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.oldking.mall.util.PageInfo;
 import com.oldking.vip.mall.search.mapper.SkuSearchMapper;
 import com.oldking.vip.mall.search.model.SkuEs;
 import com.oldking.vip.mall.search.service.SkuSearchService;
+import com.oldking.vip.mall.search.util.HighLightResultMapper;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.aggregations.bucket.terms.ParsedStringTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.stereotype.Service;
@@ -22,6 +26,8 @@ import java.util.*;
 @Service
 public class SkuSearchServiceImpl implements SkuSearchService {
 
+    @Autowired
+    private ElasticsearchRestTemplate elasticsearchRestTemplate;
     @Autowired
     private SkuSearchMapper skuSearchMapper;
 
@@ -38,10 +44,16 @@ public class SkuSearchServiceImpl implements SkuSearchService {
         NativeSearchQueryBuilder queryBuilder = queryBuilder(searchMap);
 //        分组搜索
         group(queryBuilder,searchMap);
-
+        HighlightBuilder.Field field = new HighlightBuilder
+                .Field("name")
+                .preTags("<span style=\"color:red;\">")
+                .postTags("</span>")
+                .fragmentSize(100);
+        queryBuilder.withHighlightFields(field);
 //        skuSearchMapper进行搜索
 //        Page<SkuEs> page = skuSearchMapper.search(queryBuilder.build());
-        AggregatedPage<SkuEs> page = (AggregatedPage<SkuEs>) skuSearchMapper.search(queryBuilder.build());
+//        AggregatedPage<SkuEs> page = (AggregatedPage<SkuEs>) skuSearchMapper.search(queryBuilder.build());
+        AggregatedPage<SkuEs> page = elasticsearchRestTemplate.queryForPage(queryBuilder.build(), SkuEs.class, new HighLightResultMapper());
 //        解析分组结果
         Map<String,Object> resultMap = new HashMap<String,Object>();
         parseGroup(page.getAggregations(),resultMap);
@@ -49,8 +61,14 @@ public class SkuSearchServiceImpl implements SkuSearchService {
 //        获取结果集：集合列表、总记录数
         List<SkuEs> list = page.getContent();
         resultMap.put("list", list);
-        resultMap.put("totalElements", page.getTotalElements());
 
+//         创建分页对象
+        int currentpage =  queryBuilder.build().getPageable().getPageNumber()+1;
+        PageInfo pageInfo = new PageInfo(page.getTotalElements(),currentpage,5);
+
+
+//        resultMap.put("totalElements", page.getTotalElements());
+        resultMap.put("pageInfo",pageInfo);
         return resultMap;
     }
 

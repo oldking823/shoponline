@@ -11,6 +11,9 @@ spring:
       discovery:
         #Nacos的注册地址
         server-addr: 192.168.100.130:8848
+  main:
+#    允许覆盖重复名
+    allow-bean-definition-overriding: true
 #Canal配置
 canal:
   server: 192.168.100.130:11111

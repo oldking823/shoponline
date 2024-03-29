@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/mall-web/mall-page-web/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -8,6 +11,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mall-file-service" />
         <module name="mall-goods-api" />
+        <module name="mall-page-api" />
         <module name="mall-canal-service" />
         <module name="mall-service-dependency" />
         <module name="mall-search-service" />
@@ -15,6 +19,8 @@
         <module name="mall-goods-service" />
         <module name="mall-common" />
         <module name="mall-gateway" />
+        <module name="mall-search-web" />
+        <module name="mall-page-web" />
       </profile>
     </annotationProcessing>
   </component>
@@ -27,8 +33,11 @@
       <module name="mall-gateway" options="-parameters" />
       <module name="mall-goods-api" options="-parameters" />
       <module name="mall-goods-service" options="-parameters" />
+      <module name="mall-page-api" options="-parameters" />
+      <module name="mall-page-web" options="-parameters" />
       <module name="mall-search-api" options="-parameters" />
       <module name="mall-search-service" options="-parameters" />
+      <module name="mall-search-web" options="-parameters" />
       <module name="mall-service" options="" />
       <module name="mall-service-dependency" options="-parameters" />
       <module name="mall-util" options="" />

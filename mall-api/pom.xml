@@ -10,6 +10,7 @@
     <modules>
         <module>mall-goods-api</module>
         <module>mall-search-api</module>
+        <module>mall-page-api</module>
     </modules>
     <artifactId>mall-api</artifactId>
     <packaging>pom</packaging>

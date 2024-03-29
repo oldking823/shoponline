@@ -10,6 +10,10 @@
     <artifactId>mall-web</artifactId>
     <packaging>pom</packaging>
 <description>管理涉及页面渲染的工程</description>
+    <modules>
+        <module>mall-search-web</module>
+        <module>mall-page-web</module>
+    </modules>
     <name>mall-web</name>
     <url>http://maven.apache.org</url>
 
@@ -23,6 +27,25 @@
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+<!--        web起步依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+<!--        thymeleaf配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+<!--        Nacos依赖-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 </project>

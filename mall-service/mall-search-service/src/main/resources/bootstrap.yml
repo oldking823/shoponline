@@ -7,10 +7,10 @@ spring:
     nacos:
       config:
         file-extension: yaml
-        server-addr: 192.168.100.130:8848
+        server-addr: 120.78.159.15:8848
       discovery:
         #Nacos的注册地址
-        server-addr: 192.168.100.130:8848
+        server-addr: 120.78.159.15:8848
   #Elasticsearch服务配置 6.8.12
   elasticsearch:
     rest:

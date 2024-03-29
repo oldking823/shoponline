@@ -4,7 +4,403 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="" />
+    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="git commit -m second">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/feign/CategoryFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/feign/SpuFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-page-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-page-api/src/main/java/com/oldking/vip/mall/page/feign/Pagefeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-page-api/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/UrlUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/main/java/com/oldking/vip/mall/MallPageApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/main/java/com/oldking/vip/mall/page/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/main/java/com/oldking/vip/mall/page/service/Impl/PageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/main/java/com/oldking/vip/mall/page/service/PageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/main/resources/templates/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-page-web/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/java/com/oldking/vip/mall/MallWebSearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/java/com/oldking/vip/mall/search/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/css/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/favorite.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-moon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-moon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-moon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-moon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-pc.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-pc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-pc.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-pc.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-tb.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-tb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-tb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-tb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-touch.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-touch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-touch.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/fonts/icon-touch.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bg-who1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/bk9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/buy001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/buy002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/buy01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/cooperation_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/down-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dp01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dp02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dp03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dp04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dq9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/dt9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/duihuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/empty_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/fail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/gocart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/gocart01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/goods1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/gotop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/icon-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/intro01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/intro02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/intro03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/itemlike08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/l-m01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/list7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/login-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/manage-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/mobile01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/mobile02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/mobile03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/mobile04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/mobile05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/mobile06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/part01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/part02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/part03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/pay5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/phone18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/photo_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/sampling_head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/se9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/seckillbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/shi_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/shop-intro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/shop-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/shop-part.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/ss1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/ss2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/ss3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/ss4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/ss5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/title_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/y24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/_/zj9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/account.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/ad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/ad1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/ali.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/barrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/bg-who1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/bg0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/br1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/br2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/br3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/br4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/br5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/br6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/brand_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/can9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/cartPanelViewIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/choosed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/d8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/duihuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/erweima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/floor-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/floor-1-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/floor-1-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/floor-1-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/floor-1-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/floor-1-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/goods.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/header-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/ic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/ic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/index/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/index/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/index/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/index/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/interest01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/interest02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/interest03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/interest04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/interest05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/interest06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/item/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/item/m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/item/m3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/item/m4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/like_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/linker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/loginbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/manage-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/mod-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/ms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/paylogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/quan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/sina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/today01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/today02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/today03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/today04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/img/zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/jquery.jqzoom/jquery.jqzoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/jquery.jqzoom/zoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/sui/sui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/static/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/main/resources/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-web/mall-search-web/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-api/mall-search-api/src/main/java/com/oldking/vip/mall/search/feign/SkuSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-search-api/src/main/java/com/oldking/vip/mall/search/feign/SkuSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-canal-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-canal-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-canal-service/src/main/java/com/oldking/vip/canal/MallCanalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-canal-service/src/main/java/com/oldking/vip/canal/MallCanalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-canal-service/src/main/java/com/oldking/vip/canal/listener/SkuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-canal-service/src/main/java/com/oldking/vip/canal/listener/SkuHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-canal-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-canal-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/controller/SpuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/SpuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-search-service/src/main/java/com/oldking/vip/mall/search/service/impl/SkuSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-search-service/src/main/java/com/oldking/vip/mall/search/service/impl/SkuSearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-search-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-search-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-web/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +414,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,9 +444,11 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/java/vip-mall/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model",
+    "last_directory_selection": "E:/java/vip-mall/mall-web/mall-search-web/src/main/java/com/oldking/vip/mall",
+    "last_opened_file_path": "E:/java/vip-mall/mall-web/mall-page-web/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,7 +456,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "2692806c9127741a18e822aa1b641d51"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "33f4fcb3b41d655b807c195c38197b62"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -63,11 +465,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\vip-mall\mall-web\mall-page-web\src\main\resources\templates" />
+      <recent name="E:\java\vip-mall\mall-util\mall-common\src\main\java\com\oldking\mall\util" />
+      <recent name="E:\java\vip-mall\mall-web\mall-search-web\src\main\resources\templates" />
+      <recent name="E:\java\vip-mall\mall-web\mall-search-web\src\main\resources\static" />
       <recent name="E:\java\vip-mall\mall-api\mall-goods-api\src\main\java\com\oldking\vip\mall\goods\model" />
-      <recent name="E:\java\vip-mall\mall-service\mall-goods-service\src\main\java\com\oldking\vip\mall\goods\controller" />
-      <recent name="E:\java\vip-mall\mall-service\mall-goods-service\src\main\java\com\oldking\vip\mall\goods\service\impl" />
-      <recent name="E:\java\vip-mall\mall-service\mall-goods-service\src\main\java\com\oldking\vip\mall\goods\service" />
-      <recent name="E:\java\vip-mall\mall-service\mall-goods-service\src\main\java\com\oldking\vip\mall\goods\mapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\java\vip-mall" />
@@ -76,11 +478,12 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="Application" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallCanalApplication">
+  <component name="RunManager" selected="Spring Boot.MallWebSearchApplication">
     <configuration name="MallCanalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall-canal-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.canal.MallCanalApplication" />
@@ -107,9 +510,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallPageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-page-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallPageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-search-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallSearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallWebSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-search-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallWebSearchApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oldking.vip.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,6 +546,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MallWebSearchApplication" />
         <item itemvalue="Spring Boot.MallCanalApplication" />
         <item itemvalue="Spring Boot.MallGoodsApplication" />
       </list>
@@ -154,10 +578,35 @@
       <workItem from="1709527913170" duration="7037000" />
       <workItem from="1709612437813" duration="6948000" />
       <workItem from="1709705364604" duration="12734000" />
+      <workItem from="1710054462284" duration="3619000" />
+      <workItem from="1710059887596" duration="18284000" />
+      <workItem from="1711010427415" duration="11307000" />
+      <workItem from="1711197881210" duration="2668000" />
+      <workItem from="1711256448659" duration="17985000" />
+      <workItem from="1711596910150" duration="1468000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git commit -m second" />
+    <option name="LAST_COMMIT_MESSAGE" value="git commit -m second" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -17,4 +17,10 @@
         <module>mall-service-dependency</module>
         <module>mall-common</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+    </dependencies>
 </project>

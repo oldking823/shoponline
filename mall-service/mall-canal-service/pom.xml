@@ -37,7 +37,7 @@
         </dependency>
         <dependency>
             <groupId>com.oldking</groupId>
-            <artifactId>mall-search-api</artifactId>
+            <artifactId>mall-page-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
