@@ -9,6 +9,12 @@ import java.util.List;
 @RequestMapping("/sku")
 @FeignClient(value = "mall-goods")
 public interface SkuFeign {
+    /****
+     * 根据ID获取Sku
+     */
+    @GetMapping(value = "/sku/{id}")
+    public RespResult<Sku> one(@PathVariable(value = "id") String id);
+
     @GetMapping(value = "/aditems/type")
     public List<Sku> typeItems(@RequestParam(value = "id")Integer id);
 

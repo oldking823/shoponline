@@ -6,7 +6,7 @@ import com.oldking.vip.mall.goods.mapper.AdItemsMapper;
 import com.oldking.vip.mall.goods.mapper.SkuMapper;
 import com.oldking.vip.mall.goods.model.AdItems;
 import com.oldking.vip.mall.goods.model.Sku;
-import com.oldking.vip.mall.goods.service.SKuService;
+import com.oldking.vip.mall.goods.service.SkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
@@ -20,13 +20,19 @@ import java.util.stream.Collectors;
 
 @CacheConfig(cacheNames = "ad-items-skus")
 @Service
-public class SKuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SKuService {
+public class SkuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SkuService {
 
     @Autowired
     private AdItemsMapper adItemsMapper;
 
     @Autowired
     private SkuMapper skuMapper;
+
+//    @Override
+//    public Sku getById(String id) {
+//        Sku sku =  skuMapper.selectById(id);
+//        return sku;
+//    }
 
     /***
      * 根据推广产品分类ID查询指定分类下的产品列表

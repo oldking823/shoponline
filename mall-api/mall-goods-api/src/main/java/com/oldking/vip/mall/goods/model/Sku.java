@@ -11,10 +11,7 @@ import javax.persistence.Column;
 import javax.persistence.Table;
 import java.util.Date;
 
-/*****
- * @Author: 波波
- * @Description: 云商城
- ****/
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

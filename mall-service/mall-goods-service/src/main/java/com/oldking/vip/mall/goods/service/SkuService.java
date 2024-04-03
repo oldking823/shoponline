@@ -6,11 +6,13 @@ import com.oldking.vip.mall.goods.model.Sku;
 import java.util.List;
 
 
-public interface SKuService extends IService<Sku> {
+public interface SkuService extends IService<Sku> {
 
     List<Sku> typeSkuItems(Integer id);
 
     void delTypeSkuItems(Integer id);
 
     List<Sku> updateTypeSkuItems(Integer id);
+
+//    Sku getById(String id);
 }

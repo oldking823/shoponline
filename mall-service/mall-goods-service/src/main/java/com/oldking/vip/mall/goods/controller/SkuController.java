@@ -2,7 +2,7 @@ package com.oldking.vip.mall.goods.controller;
 
 import com.oldking.mall.util.RespResult;
 import com.oldking.vip.mall.goods.model.Sku;
-import com.oldking.vip.mall.goods.service.SKuService;
+import com.oldking.vip.mall.goods.service.SkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,15 @@ import java.util.List;
 public class SkuController {
 
     @Autowired
-    private SKuService sKuService;
+    private SkuService skuService;
+    /****
+     * 根据ID获取Sku
+     */
+    @GetMapping(value = "/{id}")
+    public RespResult<Sku> one(@PathVariable(value = "id") String id){
+        Sku sku = skuService.getById(id);
+        return RespResult.ok(sku);
+    }
 
     /****
      * 根据推广分类查询推广产品列表
@@ -23,7 +31,7 @@ public class SkuController {
     @GetMapping(value = "/aditems/type")
     public List<Sku> typeItems(@RequestParam(value = "id")Integer id){
         //查询
-        List<Sku> skus = sKuService.typeSkuItems(id);
+        List<Sku> skus = skuService.typeSkuItems(id);
         return skus;
     }
 
@@ -32,7 +40,7 @@ public class SkuController {
      */
     @DeleteMapping(value = "/aditems/type")
     public RespResult delTypeItems(@RequestParam(value = "id")Integer id){
-        sKuService.delTypeSkuItems(id);
+        skuService.delTypeSkuItems(id);
         return RespResult.ok();
     }
 
@@ -43,7 +51,7 @@ public class SkuController {
     @PutMapping(value = "/aditems/type")
     public RespResult updateTypeItems(@RequestParam(value = "id")Integer id){
         //修改
-        sKuService.updateTypeSkuItems(id);
+        skuService.updateTypeSkuItems(id);
         return RespResult.ok();
     }
 

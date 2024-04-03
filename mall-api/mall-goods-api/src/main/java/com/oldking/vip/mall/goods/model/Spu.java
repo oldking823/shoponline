@@ -7,10 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/*****
- * @Author: 波波
- * @Description: 云商城
- ****/
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

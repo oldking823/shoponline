@@ -6,10 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-/*****
- * @Author: 波波
- * @Description: 云商城
- ****/
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

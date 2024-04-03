@@ -17,10 +17,10 @@ public interface BrandService extends IService<Brand> {
      * 条件分页查询
      * @param brand
      * @param currentPage
-     * @param Size
+     * @param size
      * @return
      */
-    Page<Brand> queryList(Brand brand,Long currentPage,Long Size);
+    Page<Brand> queryList(Brand brand,Long currentPage,Long size);
 
     /**
      * 根据分类ID查询品牌集合
