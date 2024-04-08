@@ -7,12 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mall-goods-api</artifactId>
-    <description>
-        shop_goods对应的api工程
-    </description>
+    <artifactId>mall-order-api</artifactId>
 
-    <name>mall-goods-api</name>
+
+    <name>mall-order-api</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -20,10 +18,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.oldking</groupId>
-            <artifactId>mall-cart-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
     </dependencies>
 </project>

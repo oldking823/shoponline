@@ -7,34 +7,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="feat(添加新服务): 添加了生成静态页面服务&#10;&#10;Closes 001">
-      <change afterPath="$PROJECT_DIR$/mall-api/mall-cart-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-api/mall-cart-api/src/main/java/com/oldking/vip/mall/cart/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-api/mall-cart-api/src/test/java/com/oldking/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/MallCartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/mapper/CartMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/service/Impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="feat(添加新服务): 添加购物车接口和添加服务&#10;&#10;Closes 001">
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-cart-api/src/main/java/com/oldking/vip/mall/cart/feign/CartFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-order-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-order-api/src/main/java/com/oldking/vip/mall/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-order-api/src/main/java/com/oldking/vip/mall/model/OrderSku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-order-api/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-user-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-user-api/src/main/java/com/oldking/vip/mall/user/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-api/mall-user-api/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/controller/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/MallOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/mapper/OrderSkuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/Impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/test/java/com/oldking/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/main/java/com/oldking/vip/mall/MallUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/main/java/com/oldking/vip/mall/user/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/main/java/com/oldking/vip/mall/user/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/main/java/com/oldking/vip/mall/user/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/main/java/com/oldking/vip/mall/user/service/Impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-user-service/src/test/java/com/oldking/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-api/mall-cart-api/src/main/java/com/oldking/vip/mall/cart/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-cart-api/src/main/java/com/oldking/vip/mall/cart/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/feign/SkuFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/feign/SkuFeign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/CategoryAttr.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/CategoryAttr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/CategoryBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/CategoryBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Sku.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Sku.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/SkuAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/SkuAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Spu.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-goods-api/src/main/java/com/oldking/vip/mall/goods/model/Spu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/MallCartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/MallCartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/service/Impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall/cart/service/Impl/CartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/controller/SkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/controller/SkuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/SKuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/SkuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SKuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/mapper/SkuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/mapper/SkuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/SkuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SkuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/RespResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/RespResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +67,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\bin\git.exe" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,34 +88,38 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_directory_selection": "E:/java/vip-mall/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall",
-    "last_opened_file_path": "E:/java/vip-mall/mall-web/mall-page-web/src/main/resources/templates",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Perforce",
-    "spring.configuration.checksum": "51034d26c6133acc4bc7fcbbe861b474"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/java/vip-mall/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/java/vip-mall/mall-web/mall-page-web/src/main/resources/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d4ad9496494657898ce59e9989ee0ac5&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.oldking.vip.mall.order.service" />
+      <recent name="com.oldking.vip.mall.user.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\java\vip-mall\mall-web\mall-page-web\src\main\resources\templates" />
       <recent name="E:\java\vip-mall\mall-util\mall-common\src\main\java\com\oldking\mall\util" />
@@ -118,7 +139,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallWebSearchApplication">
+  <component name="RunManager" selected="Spring Boot.MallUserApplication">
     <configuration name="MallCanalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall-canal-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.canal.MallCanalApplication" />
@@ -152,6 +173,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MallOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall-order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallOrderApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oldking.vip.mall.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallPageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-page-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallPageApplication" />
@@ -162,6 +196,13 @@
     <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mall-search-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallSearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MallUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mall-user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.mall.MallUserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,8 +229,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MallWebSearchApplication" />
+        <item itemvalue="Spring Boot.MallOrderApplication" />
         <item itemvalue="Spring Boot.MallGoodsApplication" />
+        <item itemvalue="Spring Boot.MallWebSearchApplication" />
         <item itemvalue="Spring Boot.MallCanalApplication" />
       </list>
     </recent_temporary>
@@ -227,7 +269,9 @@
       <workItem from="1711256448659" duration="17985000" />
       <workItem from="1711596910150" duration="3570000" />
       <workItem from="1712049203199" duration="3334000" />
-      <workItem from="1712119643968" duration="7171000" />
+      <workItem from="1712119643968" duration="9167000" />
+      <workItem from="1712318615207" duration="715000" />
+      <workItem from="1712375643152" duration="22416000" />
     </task>
     <task id="LOCAL-00001" summary="feat(添加新服务): 添加了生成静态页面服务&#10;&#10;Closes 001">
       <created>1711685058093</created>
@@ -236,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711685058093</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(添加新服务): 添加购物车接口和添加服务&#10;&#10;Closes 001">
+      <created>1712147382619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712147382619</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +307,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git commit -m second" />
     <MESSAGE value="feat(添加新服务): 添加了生成静态页面服务&#10;&#10;Closes 001" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(添加新服务): 添加了生成静态页面服务&#10;&#10;Closes 001" />
+    <MESSAGE value="feat(添加新服务): 添加购物车接口和添加服务&#10;&#10;Closes 001" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(添加新服务): 添加购物车接口和添加服务&#10;&#10;Closes 001" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

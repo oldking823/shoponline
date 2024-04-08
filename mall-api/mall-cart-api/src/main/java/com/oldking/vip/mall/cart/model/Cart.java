@@ -15,10 +15,11 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Cart implements Serializable {
     @Id
-    private String _Id;
+    private String _id;
     private String userName;
     private String name;
     private Integer price;
     private String image;
     private String skuId;
+    private Integer num;
 }
