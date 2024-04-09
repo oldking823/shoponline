@@ -50,10 +50,11 @@ public class RespResult<T> implements Serializable {
         this.code = respCode.getCode();
         this.message = respCode.getMsg();
     }
-    public RespResult( RespCode respCode) {
+    public RespResult(RespCode respCode) {
         this.code = respCode.getCode();
         this.message = respCode.getMsg();
     }
+
     public RespResult(){}
     public static RespResult ok(){
         return new RespResult(null,RespCode.SUCCESS);
@@ -66,6 +67,9 @@ public class RespResult<T> implements Serializable {
     }
     public static RespResult error(String message){
         return secByerror(RespCode.ERROR.getCode(), message);
+    }
+    public static RespResult error(RespCode resultCode) {
+        return new RespResult(resultCode);
     }
 
     public static RespResult secByerror(Integer code,String message){

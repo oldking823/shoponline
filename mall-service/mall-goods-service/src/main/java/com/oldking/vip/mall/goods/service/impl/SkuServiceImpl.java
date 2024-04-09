@@ -2,6 +2,7 @@ package com.oldking.vip.mall.goods.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.oldking.vip.mall.cart.model.Cart;
 import com.oldking.vip.mall.goods.mapper.AdItemsMapper;
 import com.oldking.vip.mall.goods.mapper.SkuMapper;
 import com.oldking.vip.mall.goods.model.AdItems;
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
 
 @CacheConfig(cacheNames = "ad-items-skus")
 @Service
-public class SkuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SkuService {
+public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuService {
 
     @Autowired
     private AdItemsMapper adItemsMapper;
@@ -28,11 +29,20 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SkuSer
     @Autowired
     private SkuMapper skuMapper;
 
-//    @Override
-//    public Sku getById(String id) {
-//        Sku sku =  skuMapper.selectById(id);
-//        return sku;
-//    }
+    /**
+     * 库存递减
+     *
+     * @param carts
+     */
+    @Override
+    public void dcount(List<Cart> carts) {
+        for (Cart cart : carts) {
+            int dcount = skuMapper.dcount(cart.getSkuId(), cart.getNum());
+            if (dcount <= 0) {
+                throw new RuntimeException("库存不足！");
+            }
+        }
+    }
 
     /***
      * 根据推广产品分类ID查询指定分类下的产品列表
@@ -41,17 +51,17 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SkuSer
      * ad-items-skus::1
      */
     //@Cacheable(cacheNames = "ad-items-skus",key ="#id" )
-    @Cacheable(key ="#id" )
+    @Cacheable(key = "#id")
     @Override
     public List<Sku> typeSkuItems(Integer id) {
         //1.查询当前分类下的所有列表信息
         QueryWrapper<AdItems> adItemsQueryWrapper = new QueryWrapper<AdItems>();
-        adItemsQueryWrapper.eq("type",id);
+        adItemsQueryWrapper.eq("type", id);
         List<AdItems> adItems = adItemsMapper.selectList(adItemsQueryWrapper);
 
         //2.根据推广列表查询产品列表信息
-        List<String> skuids = adItems.stream().map(adItem->adItem.getSkuId()).collect(Collectors.toList());
-        return skuids==null || skuids.size()<=0? null : skuMapper.selectBatchIds(skuids);
+        List<String> skuids = adItems.stream().map(adItem -> adItem.getSkuId()).collect(Collectors.toList());
+        return skuids == null || skuids.size() <= 0 ? null : skuMapper.selectBatchIds(skuids);
     }
 
     /***
@@ -60,9 +70,10 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SkuSer
      * @return
      */
     //@CacheEvict(cacheNames = "ad-items-skus",key ="#id" )
-    @CacheEvict(key ="#id" )
+    @CacheEvict(key = "#id")
     @Override
-    public void delTypeSkuItems(Integer id) {}
+    public void delTypeSkuItems(Integer id) {
+    }
 
     /****
      * 修改缓存
@@ -75,12 +86,12 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper,Sku> implements SkuSer
     public List<Sku> updateTypeSkuItems(Integer id) {
         //1.查询当前分类下的所有列表信息
         QueryWrapper<AdItems> adItemsQueryWrapper = new QueryWrapper<AdItems>();
-        adItemsQueryWrapper.eq("type",id);
+        adItemsQueryWrapper.eq("type", id);
         List<AdItems> adItems = adItemsMapper.selectList(adItemsQueryWrapper);
 
         //2.根据推广列表查询产品列表信息
-        List<String> skuids = adItems.stream().map(adItem->adItem.getSkuId()).collect(Collectors.toList());
-        return skuids==null || skuids.size()<=0? null : skuMapper.selectBatchIds(skuids);
+        List<String> skuids = adItems.stream().map(adItem -> adItem.getSkuId()).collect(Collectors.toList());
+        return skuids == null || skuids.size() <= 0 ? null : skuMapper.selectBatchIds(skuids);
     }
 
 }

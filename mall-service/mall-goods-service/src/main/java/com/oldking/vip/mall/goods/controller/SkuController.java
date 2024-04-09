@@ -1,6 +1,7 @@
 package com.oldking.vip.mall.goods.controller;
 
 import com.oldking.mall.util.RespResult;
+import com.oldking.vip.mall.cart.model.Cart;
 import com.oldking.vip.mall.goods.model.Sku;
 import com.oldking.vip.mall.goods.service.SkuService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,15 @@ public class SkuController {
 
     @Autowired
     private SkuService skuService;
+
+    /**
+     * 库存递减
+     */
+    @PostMapping("/dcount")
+    public RespResult dcount(@RequestBody List<Cart> carts){
+        skuService.dcount(carts);
+        return RespResult.ok();
+    }
     /****
      * 根据ID获取Sku
      */
