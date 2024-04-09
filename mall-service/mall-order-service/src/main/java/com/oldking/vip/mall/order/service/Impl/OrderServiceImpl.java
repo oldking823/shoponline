@@ -12,6 +12,7 @@ import com.oldking.vip.mall.model.OrderSku;
 import com.oldking.vip.mall.order.mapper.OrderMapper;
 import com.oldking.vip.mall.order.mapper.OrderSkuMapper;
 import com.oldking.vip.mall.order.service.OrderService;
+import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +36,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
      *
      * @param order
      */
+    @GlobalTransactional
     @Override
     public boolean add(Order order) {
 //        查询购物车数据

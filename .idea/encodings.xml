@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/mall-api/mall-order-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-order-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-page-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-api/mall-pay-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-search-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/mall-user-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-api/src/main/java" charset="UTF-8" />
@@ -18,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/mall-service/mall-file-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-service/mall-order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-service/mall-search-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-service/mall-user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-service/src/main/java" charset="UTF-8" />
