@@ -7,34 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="feat(添加新服务): 增加事务统一管理，修复可能出现的数据不一致&#10;&#10;Closes 001">
-      <change afterPath="$PROJECT_DIR$/.idea/GitCommitMessageStorage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-api/mall-pay-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-api/mall-pay-api/src/main/java/com/oldking/vip/mall/pay/model/PayLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/resources/file.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/resources/registry.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/mq/OrderResultListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/MallPayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/controller/WeixinPayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/mapper/PayLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/mq/TransactionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/service/Impl/PayLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/service/PayLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ">
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/AESUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/Base64Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/MD5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GitCommitMessageStorage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GitCommitMessageStorage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/mall-page-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/mall-page-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/java/com/oldking/vip/mall/goods/service/impl/SkuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-goods-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/Impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vip-mall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vip-mall.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-util/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-util/mall-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +30,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -103,13 +88,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "spring.configuration.checksum": "a3cf18bcf5603b3ea23f548a99d7d108",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.AESUtil.executor": "Run"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -142,7 +128,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MallUserApplication">
+  <component name="RunManager" selected="应用程序.AESUtil">
+    <configuration name="AESUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oldking.mall.util.AESUtil" />
+      <module name="mall-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oldking.mall.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallCanalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall-canal-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.oldking.vip.canal.MallCanalApplication" />
@@ -239,6 +238,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.AESUtil" />
         <item itemvalue="Spring Boot.MallWebSearchApplication" />
         <item itemvalue="Spring Boot.MallOrderApplication" />
         <item itemvalue="Spring Boot.MallGoodsApplication" />
@@ -299,7 +299,7 @@
       <workItem from="1712634499037" duration="69000" />
       <workItem from="1712634577028" duration="3750000" />
       <workItem from="1712646504915" duration="574000" />
-      <workItem from="1712647093512" duration="7224000" />
+      <workItem from="1712647093512" duration="12587000" />
     </task>
     <task id="LOCAL-00001" summary="feat(添加新服务): 添加了生成静态页面服务&#10;&#10;Closes 001">
       <created>1711685058093</created>
@@ -330,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712645448868</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ">
+      <option name="closed" value="true" />
+      <created>1712665526991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712665526991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +361,9 @@
     <MESSAGE value="feat(添加新服务): 添加购物车接口和添加服务&#10;&#10;Closes 001" />
     <MESSAGE value="feat(添加新服务): 订单生成功能，并修复购物车部分Bug&#10;&#10;Closes 001" />
     <MESSAGE value="feat(添加新服务): 增加事务统一管理，修复可能出现的数据不一致&#10;&#10;Closes 001" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(添加新服务): 增加事务统一管理，修复可能出现的数据不一致&#10;&#10;Closes 001" />
+    <MESSAGE value="&#10;&#10;Closes 001" />
+    <MESSAGE value="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
