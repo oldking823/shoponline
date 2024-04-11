@@ -1,6 +1,7 @@
 package com.oldking.vip.mall.order.service.Impl;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.oldking.mall.util.RespResult;
@@ -72,5 +73,28 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         cartFeign.delete(order.getCartIds());
 
         return true;
+    }
+
+    /**
+     * 支付成功修改订单状态
+     *
+     * @param orderId
+     */
+    @Override
+    public int updateAfterPayStatus(String orderId) {
+//        修改后的状态
+        Order order = new Order();
+        order.setId(orderId);
+        order.setOrderStatus(1);
+        order.setPayStatus(1);
+
+//        修改条件
+        QueryWrapper<Order> wrapper = new QueryWrapper<>();
+        wrapper.eq("id", orderId);
+        wrapper.eq("order_status", 0);
+        wrapper.eq("pay_status", 0);
+
+
+        return orderMapper.update(order, wrapper);
     }
 }

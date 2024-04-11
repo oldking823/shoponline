@@ -8,4 +8,9 @@ public interface OrderService extends IService<Order> {
      * 添加订单
      */
     boolean add(Order order);
+
+    /**
+     * 支付成功修改订单状态
+     */
+    int updateAfterPayStatus(String orderId);
 }

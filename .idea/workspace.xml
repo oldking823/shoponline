@@ -7,13 +7,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ">
-      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/AESUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/Base64Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/MD5.java" afterDir="false" />
+    <list default="true" id="924ca39d-a73b-4eb1-8c48-7ce5f2a113e3" name="Changes" comment="feat: 加入加密算法">
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/pay/WeixinPayParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/config/WeixinPayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/service/Impl/WeixinPayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/service/WeixinPayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/resources/apiclient_cert.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-common/src/main/java/com/oldking/mall/util/Signature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-service-dependency/src/main/java/com/oldking/vip/mall/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-util/mall-service-dependency/src/main/java/com/oldking/vip/mall/util/IPUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/GitCommitMessageStorage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GitCommitMessageStorage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-util/mall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-util/mall-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/mq/OrderResultListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/mq/OrderResultListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/Impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/java/com/oldking/vip/mall/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-order-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-pay-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/MallPayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/MallPayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/controller/WeixinPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/controller/WeixinPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/service/Impl/PayLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/java/com/oldking/vip/mall/pay/service/Impl/PayLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-service/mall-pay-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +99,7 @@
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "E:/java/vip-mall/mall-service/mall-cart-service/src/main/java/com/oldking/vip/mall",
-    "last_opened_file_path": "E:/java/vip-mall/mall-service/mall-goods-service/src/main/resources",
+    "last_opened_file_path": "E:/java/vip-mall/mall-util/mall-service-dependency/src/main/java/com/oldking/vip/mall/util",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,14 +125,17 @@
       <recent name="com.oldking.vip.mall.user.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\java\vip-mall\mall-service\mall-goods-service\src\main\resources" />
-      <recent name="E:\java\vip-mall\mall-service\mall-order-service\src\main\resources" />
-      <recent name="E:\java\vip-mall\mall-web\mall-page-web\src\main\resources\templates" />
+      <recent name="E:\java\vip-mall\mall-util\mall-service-dependency\src\main\java\com\oldking\vip\mall\util" />
       <recent name="E:\java\vip-mall\mall-util\mall-common\src\main\java\com\oldking\mall\util" />
-      <recent name="E:\java\vip-mall\mall-web\mall-search-web\src\main\resources\templates" />
+      <recent name="E:\java\vip-mall\mall-service\mall-pay-service\src\main\resources" />
+      <recent name="E:\java\vip-mall\mall-service\mall-pay-service\src\main\java\com\oldking\vip\mall\pay\config" />
+      <recent name="E:\java\vip-mall\mall-service\mall-goods-service\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\java\vip-mall" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.oldking.vip.mall.pay.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -299,7 +319,7 @@
       <workItem from="1712634499037" duration="69000" />
       <workItem from="1712634577028" duration="3750000" />
       <workItem from="1712646504915" duration="574000" />
-      <workItem from="1712647093512" duration="12587000" />
+      <workItem from="1712647093512" duration="30761000" />
     </task>
     <task id="LOCAL-00001" summary="feat(添加新服务): 添加了生成静态页面服务&#10;&#10;Closes 001">
       <created>1711685058093</created>
@@ -338,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712665526991</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 加入加密算法">
+      <option name="closed" value="true" />
+      <created>1712712940998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712712940998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +391,10 @@
     <MESSAGE value="feat(添加新服务): 增加事务统一管理，修复可能出现的数据不一致&#10;&#10;Closes 001" />
     <MESSAGE value="&#10;&#10;Closes 001" />
     <MESSAGE value="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: &#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ" />
+    <MESSAGE value="feat: &#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ" />
+    <MESSAGE value="feat:&#10;&#10;添加Seata配置，添加事务消息，完善订单提交逻辑&#10;&#10;BREAKING CHANGE: 引入Seata，引入RocketMQ" />
+    <MESSAGE value="feat: 加入加密算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 加入加密算法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
